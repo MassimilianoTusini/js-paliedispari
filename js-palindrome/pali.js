@@ -2,7 +2,7 @@
 let word = prompt ("Inserisci una parola");
 
 // Invocare una funzione per invertire la parola scritta e verificare che sia palindroma
-function reversedWord(parola) {
+function palindrome(parola) {
 
     //rendere la parola tutta minuscola in modo da facilitare il confronto
     parola = parola.toLowerCase();
@@ -19,10 +19,10 @@ function reversedWord(parola) {
     return parola === revertedWord;
 }
 // Mandare true o false in console
-console.log(reversedWord(word))
+console.log(palindrome(word))
 
 // Chiamare la funzione e mandare in console il risultato
-if (reversedWord(word)){
+if (palindrome(word)){
     console.log("La parola è palindroma")
 } else {
     console.log("La parola non è palindroma")
